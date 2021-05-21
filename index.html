@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hello, Bootstrap Table! (with datepicker range)</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/extensions/filter-control/bootstrap-table-filter-control.min.css" integrity="sha512-IK+plgQ3Qomdj9Mzq2WbM5LF8JY0PPXHGGfiBqBkwhXUi1tVAIvIaLbt330r3t0Y4EUxqG0YGfEhRrQS0gKeYQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container-fluid">
+        <div class="table-responsive">
+            <table id="tblAdmin" class="table tabla-listado table-striped table-hover table-sm"
+                data-show-export="true"
+                data-click-to-select="true"
+                data-toolbar="#toolbar"
+                data-pagination="true"
+                data-page-size="20"
+                data-filter-control="true"
+                data-show-search-clear-button="true">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col" data-field="name" data-sortable="true" data-filter-control="input">Name</th>
+                        <th scope="col" data-field="email" data-sortable="true" data-filter-control="input">Email</th>
+                        <th scope="col" data-field="phone" data-sortable="true" data-filter-control="input">Phone</th>
+                        <th scope="col" data-field="birthday" data-sortable="true" data-filter-control="input">
+                        Birthday</th>
+                    </tr>
+                </thead>
+                <tbody class="thead-light">
+                        <tr>
+                            <td>John Doe</td>
+                            <td>jo.doe@doe.com</td>
+                            <td>+34 928-123-122</td>
+                            <td>10-10-1949</td>
+                        </tr>
+                        <tr>
+                            <td>Jane Doe</td>
+                            <td>ja.doe@doe.com</td>
+                            <td>+34 928-123-123</td>
+                            <td>12-10-1952</td>
+                        </tr>
+                        <tr>
+                            <td>Jr. Doe</td>
+                            <td>jr.doe@doe.com</td>
+                            <td>+34 922-123-124</td>
+                            <td>16-03-1977</td>
+                        </tr>
+                        <tr>
+                            <td>Smith Doe</td>
+                            <td>sm.doe@doe.com</td>
+                            <td>+34 928-123-125</td>
+                            <td>01-05-2021</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-table@1.18.3/dist/bootstrap-table.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/extensions/filter-control/bootstrap-table-filter-control.min.js" integrity="sha512-nrE3yoRxAz6j1ZhkE59hXcSKV0cewPN+8ZEXJZnsz2qofCEOwmctecuKrBnWQUj7UA5dOnI+Cam52/AdvB6HKQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="bootstraptable-datapicker-range.js"></script>
+</body>
+</html>
